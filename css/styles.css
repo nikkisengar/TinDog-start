@@ -4,15 +4,40 @@ body{
 }
 
 h1{
-  font-weight: "Montserrat-Black";
+  font-weight: "Montserrat";
   font-size: 3.5rem;
   line-height: 1.5;
+  /* font-weight: 900; */
+}
+
+h3{
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 /************************ID SELECTOR*******************/
 #title{
   background-color: #ff4c68;
   color: #fff;
+}
+
+#features{
+  text-align:center;
+}
+
+#features i{
+  color: #ef8172;
+  padding: 4.5rem 2.5rem  1.5rem;
+}
+
+#features i:hover{
+  color: #ff4c68;
+}
+
+#features p{
+  color: #8f8f8f;
+  font-size: 1rem;
 }
 
 /************************CLASS SELECTOR*******************/
@@ -37,7 +62,8 @@ h1{
 
 .nav-link{
   font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+  font-family: "Ubuntu";
+  font-weight: lighter;
 }
 
 /*****************Download Button Selector****************/
