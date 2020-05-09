@@ -23,18 +23,59 @@ h3 {
   font-weight: 900;
 }
 
-/************************ID SELECTOR*******************/
+/* contauner-fluid for all sections */
+.container-fluid {
+  padding: 3% 15% 5%;
+}
+
+/****************Navigation Bar Selector******************/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Ubuntu";
+  font-weight: lighter;
+}
+
+/* Title section */
+
 #title {
   background-color: #ff4c68;
   color: #fff;
-  position: absolute;
 }
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+  font-family: "Ubuntu";
+
+}
+
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
 
 /* Feature Section */
 #features {
   text-align: center;
   background-color: #fff;
-  position: absolute;
+  position: relative;
+  /* z-index: 1; */
 }
 
 #features i {
@@ -86,42 +127,100 @@ h3 {
   text-align: center;
 }
 
+#pricing p{
+  color: #8f8f8f;
+  font-size: 1rem;
+  font-weight: "Montserrat";
+  font-weight: 900;
+}
+
 .pricing-column{
   padding: 3% 2%;
 }
-/************************CLASS SELECTOR*******************/
-.container-fluid {
-  padding: 3% 15%;
+
+/* Mobile Friendly Website using Media Query */
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+
+  .title-img{
+    position: static;
+    transform: rotate(0);
+  }
 }
 
-/****************Navigation Bar Selector******************/
-.navbar {
-  padding: 0 0 4.5rem;
+/* Call to Action */
+#cta{
+  background-color: #ff4c68;
+  padding: 5% 5%;
+  text-align: center;
+  color: #fff;
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
+#cta h3{
+  font-weight: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
-.nav-item {
-  padding: 0 18px;
+/* Footer */
+/* #footer{
+  font-weight: "Montserrat";
+  text-align: center;
+  font-weight: 900;
 }
 
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Ubuntu";
-  font-weight: lighter;
+#footer i {
+  padding: 8rem 1rem 2.5rem;
 }
 
-/*****************Download Button Selector****************/
-.download-btn {
-  margin: 5% 3% 5% 0;
-  font-family: "Ubuntu";
+#footer i:hover{
 }
 
-.title-img {
-  width: 60%;
-  transform: rotate(25deg);
+#footer p{
+  color: #8f8f8f;
+  font-size: 1rem;
+} */
+
+/* external footer */
+
+
+.social-footer {
+  padding: 1rem;
+  font-weight: "Montserrat";
+  text-align: center;
+  background: #fff;
+  /* display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; */
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons {
+  margin-right: 0;
+  margin-top: 7%;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  /* border-radius: 100%; */
+  padding: 0.5rem 1.5rem;
+}
+.social-footer  p{
+  font-size: 1rem;
+  font-weight: "Montserrat";
+  font-weight: 900;
+  margin-top: 2%;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
 }
